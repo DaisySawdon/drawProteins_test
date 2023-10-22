@@ -30,7 +30,7 @@ draw_canvas <- function(data){
         max(data$end, na.rm=TRUE) + max(data$end, na.rm=TRUE)*0.1)
     p <- p + ggplot2::labs(x = "Amino acid number") # label x-axis
     p <- p + ggplot2::labs(y = "") # label y-axis 
-   # p <- p + ggthemes::theme_few() 
+    p <- p + ggthemes::theme_few() 
 
     return(p)
 }
